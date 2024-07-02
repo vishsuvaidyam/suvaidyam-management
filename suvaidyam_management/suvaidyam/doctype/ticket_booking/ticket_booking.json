@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-21 15:35:43.404582",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "movie",
+  "date",
+  "show",
+  "column_break_plzm",
+  "numbers_of_ticket",
+  "theater"
+ ],
+ "fields": [
+  {
+   "fetch_from": "show.movie",
+   "fieldname": "theater",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Theater",
+   "options": "Movie Theater",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "numbers_of_ticket",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Numbers Of Ticket",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "movie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Movie",
+   "options": "Movie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_plzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "show",
+   "fieldtype": "Link",
+   "label": "Show",
+   "options": "Movie Theater",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-21 16:00:35.960913",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Ticket Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

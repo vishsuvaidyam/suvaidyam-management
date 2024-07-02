@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-14 23:03:49.944634",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "accounting_details_section",
+  "posting_date",
+  "payable_account",
+  "accounting_dimensions_section",
+  "project",
+  "cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "accounting_details_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Details"
+
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payable_account",
+   "fieldtype": "Select",
+   "label": "Payable Account",
+   "options": "SBI\nBOI\nHDFC"
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Select",
+   "label": "Project",
+   "options": "Project1\nProject2"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Select",
+   "label": "Cost Center",
+   "options": "Main - S"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-14 23:13:35.272233",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Totals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

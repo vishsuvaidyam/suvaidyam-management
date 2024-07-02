@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subject_name",
+ "creation": "2024-06-20 14:38:39.336014",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject Name",
+   "options": "Art Subject",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-20 15:34:02.562395",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Art Child",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

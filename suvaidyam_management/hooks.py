@@ -5,13 +5,17 @@ app_description = "suvaidyam"
 app_email = "vish.suvaidyam@gmail.com"
 app_license = "mit"
 # required_apps = []
+ 
+ 
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/suvaidyam_management/css/suvaidyam_management.css"
-# app_include_js = "/assets/suvaidyam_management/js/suvaidyam_management.js"
+# app_include_js ="/assets/suvaidyam_management/js/validat.js"
+ 
+    
 
 # include js, css files in header of web template
 # web_include_css = "/assets/suvaidyam_management/css/suvaidyam_management.css"
@@ -28,7 +32,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Beneficiary" : "public/js/validat.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

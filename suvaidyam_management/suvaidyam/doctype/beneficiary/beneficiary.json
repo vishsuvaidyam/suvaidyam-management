@@ -1,0 +1,314 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student_full_name",
+ "creation": "2024-06-17 11:33:49.885686",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_ihfy",
+  "column_break_zksn",
+  "preview",
+  "image",
+  "personal_information_section",
+  "first_name",
+  "student_full_name",
+  "father_name",
+  "class",
+  "date_of_birth",
+  "email",
+  "addhar_number",
+  "column_break_blqu",
+  "last_name",
+  "mother_name",
+  "roll_number",
+  "gender",
+  "mobile_no",
+  "password",
+  "pan_no",
+  "address_section",
+  "state",
+  "block",
+  "village_name",
+  "column_break_xdhz",
+  "district",
+  "village_panchaayat",
+  "ward_no",
+  "education_section",
+  "10th_details_column",
+  "10th_mark",
+  "10th_mark_",
+  "column_break_hdvw",
+  "registration_number",
+  "12th_registration_fill_section",
+  "program",
+  "column_break_mfnh",
+  "subject"
+ ],
+ "fields": [
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Block",
+   "options": "Block",
+   "reqd": 1
+  },
+  {
+   "fieldname": "village_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Village Name",
+   "options": "Village",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward_no",
+   "fieldtype": "Link",
+   "label": "Ward No.",
+   "options": "ward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_blqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_xdhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "default": "+91-",
+   "fieldname": "mobile_no",
+   "fieldtype": "Phone",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "Pan No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " First Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Image",
+   "label": "preview",
+   "options": "image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "max_height": "100px",
+   "width": "200px"
+  },
+  {
+   "fieldname": "10th_mark_",
+   "fieldtype": "Percent",
+   "label": "10th Mark %",
+   "reqd": 1
+  },
+  {
+   "fieldname": "10th_details_column",
+   "fieldtype": "Column Break",
+   "label": "10th details"
+  },
+  {
+   "fieldname": "10th_mark",
+   "fieldtype": "Int",
+   "label": "10th Mark",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "roll_number",
+   "fieldtype": "Int",
+   "label": "Roll Number",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "addhar_number",
+   "fieldtype": "Data",
+   "label": "Addhar Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Full Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "village_panchaayat",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Village Panchaayat",
+   "options": "Council",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ihfy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zksn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Table MultiSelect",
+   "label": "Subject",
+   "options": "Commerce Child",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Select",
+   "label": "Faculity",
+   "options": "\nScience\nCommerce\nArts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "12th_registration_fill_section",
+   "fieldtype": "Section Break",
+   "label": "12th Registration Fill"
+  },
+  {
+   "fieldname": "column_break_hdvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mfnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Int",
+   "label": "Registration Number",
+   "reqd": 1
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-21 13:06:25.554614",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Beneficiary",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

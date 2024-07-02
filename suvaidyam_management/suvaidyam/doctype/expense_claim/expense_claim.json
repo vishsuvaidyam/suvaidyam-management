@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-13 13:08:03.201076",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "expense_approver",
+  "approval_status",
+  "expenses_section",
+  "small_text_esjy",
+  "attachments_section",
+  "upload_images_or_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_approver",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Approver",
+   "options": "ritesh.yadav@suvaidyam.com : Ritesh Yadav",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "Draft\nApproved\nRejected"
+  },
+  {
+   "fieldname": "expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Expenses"
+  },
+  {
+   "fieldname": "small_text_esjy",
+   "fieldtype": "Small Text",
+   "label": "No expenses added"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "upload_images_or_documents",
+   "fieldtype": "Attach Image",
+   "label": "Upload images or documents"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-13 13:19:11.578798",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Expense Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

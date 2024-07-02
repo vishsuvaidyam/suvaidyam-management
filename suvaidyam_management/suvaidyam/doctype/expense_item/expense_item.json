@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-15 12:43:44.594352",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_epkj",
+  "expense_date",
+  "expense_claim_type",
+  "description",
+  "amount",
+  "sanctioned_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "label": "Expense Date"
+  },
+  {
+   "depends_on": "weswdewsd",
+   "fieldname": "expense_claim_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Claim Type",
+   "options": "Calls\nFood\nMedical\nOthers\nTravel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sanctioned_amount",
+   "fieldtype": "Int",
+   "label": "Sanctioned Amount"
+  },
+  {
+   "fieldname": "column_break_epkj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-15 13:13:49.468083",
+ "modified_by": "Administrator",
+ "module": "suvaidyam",
+ "name": "Expense Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
